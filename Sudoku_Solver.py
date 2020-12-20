@@ -6,7 +6,7 @@ def print_board(board):
     Prints board in traditional format seperated by spaces
     
     Params:
-        board: 2d Array (Soduku Board) 
+        board: 2d Array (Sudoku Board) 
     
 
     '''
@@ -23,7 +23,7 @@ def find_zero(board):
     Finds first zero in board starting at top left and navigating left to right by row
     
     params:
-        board (2D Array): Soduku Board
+        board (2D Array): Sudoku Board
         
     returns:
         list of indices where the first 0 was found
@@ -51,7 +51,7 @@ def valid(board, row, col, value):
     Checks 3x3 Region, Rows, and Columns for Duplicate Elements
     
     params:
-        board (2D Array): Soduku Board
+        board (2D Array): Sudoku Board
         row(int): Row Index to Check
         col(int): Column Index to Check
         value(int): Value to check at board[row][col]
@@ -83,10 +83,10 @@ def valid(board, row, col, value):
 def solve(board):
     '''
     Uses recursive backtracking with helper functions defined above
-    to solve a 9x9 Soduku Board
+    to solve a 9x9 Sudoku Board
     
     params:
-        board(2D Array) : Soduku Board
+        board(2D Array) : Sudoku Board
     
     '''
     # Base Case: If there are no more zeroes, we are done, return the board
@@ -113,12 +113,12 @@ def solve(board):
         
 def Soduku_Prompt():
     '''
-    Takes in a User Inputted Soduku Board
+    Takes in a User Inputted Sudoku Board
     and Prints the Solved Verson
     
     
     '''
-    print('Welcome to Soduku Solver! \n')
+    print('Welcome to Sudoku Solver! \n')
 
     board = []
     for i in range(1, 10):
