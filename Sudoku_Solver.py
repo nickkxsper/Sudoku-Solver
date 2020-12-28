@@ -1,4 +1,3 @@
-import time
 counter = 0
 
 def print_board(board):
@@ -7,8 +6,6 @@ def print_board(board):
     
     Params:
         board: 2d Array (Sudoku Board) 
-    
-
     '''
     for row in board:
         row_print = ''
@@ -138,15 +135,9 @@ def Soduku_Prompt():
         print('Board Error! Please Try Again!\n')
         Soduku_Prompt()
         
-        
 
-
-
-
-if __name__ == '__main__': 
-    Soduku_Prompt()
+if __name__ == '__main__': Soduku_Prompt()
     '''
-
     # Example board
     board =[[0, 0, 3, 0, 0, 4, 0, 5, 8],
         [6, 0, 0, 1, 0, 0, 0, 0, 2],
